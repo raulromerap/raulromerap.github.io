@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<style>
+  			body {background-color: lightsalmon;}
+  			h1 {color: red;}
+ 		 	p {color: blue;}
+		</style> 
+		<title>Hola mundo</title>
+	</head>
+	<body onload="saludo()">
+		<h1 id= "titulo" onclick="cambia_color()">Hola Mundo</h1>
+		<p>Carla, devuelveme a los niños, llevo 10 meses sin verlos</p>
+		<script>
+   			function saludo() {
+   				alert("Bienvenido")
+   			}
+   			function cambia_color() {
+   				document.getElementById("titulo").style.
+   				color="darkblue"
+   			}
+		</script> 
+	</body>
+</html>
