@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios|Raúl Romera Pavón</title>
+</head>
+<body>
+	<p><a href="index.html">Inicio</a></p>
+<form action="https://lm.ciclo.iesnervion.es/" method="post">
+	<fieldset>
+		<legend><h1>TU RECETA</h1></legend>
+	<h3>
+	<label for="nombre">Nombre de la receta</label><span style="color: red">*</span>
+	<input type="text" name="nombre" id="nombre" required><br><br>
+	<label for="correo">Correo Electronico</label><span style="color: red">*</span>
+	<input type="email" name="correo" id="correo" placeholder="ejemplo@gmail.com" required><br><br><br>
+	<label>Momento del día</label><br>
+	<h4>
+	<input type="checkbox" name="momento[]" value="desayuno" id="momento1">Desayuno
+	<input type="checkbox" name="momento[]" value="almuerzo" id="momento2">Almuerzo
+	<input type="checkbox" name="momento[]" value="merienda" id="momento3">Merienda
+	<input type="checkbox" name="momento[]" value="cena" id="momento4">Cena
+	<input type="checkbox" name="momento[]" value="postre" id="momento5">Postre<br><br>
+	</h4>
+	<label><b>Ingredientes</b></label><br>
+	<select multiple name="ingredientes[]">
+		<optgroup label="Carnes">
+			<option value="Pollo" id="carnes1">Pollo</option>
+			<option value="Ternera" id="carnes2">Ternera</option>
+			<option value="Cerdo" id="carnes3">Cerdo</option>
+		</optgroup>
+		<optgroup label="Pescados">
+			<option value="Salmón" id="pescados1">Salmón</option>
+			<option value="Dorada" id="pescados2">Dorada</option>
+			<option value="Atún" id="pescados3">Atún</option>
+		</optgroup>
+		<optgroup label="Verduras">
+			<option value="Zanahoria" id="verduras1">Zanahoria</option>
+			<option value="Lechuga" id="verduras2">Lechuga</option>
+			<option value="Pimiento" id="verduras3">Pimiento</option>
+		</optgroup>
+	</select><br>
+	<p><b>Tiempo de preparación</b></p>
+	<label for="horas">Horas</label><br>
+	<input type="radio" value="0" name="horas" id="horas1">0
+	<input type="radio" value="1" name="horas" id="horas2">1
+	<input type="radio" value="2" name="horas" id="horas3">2<br>
+	<label for="minutos">Minutos</label><br>
+	<input type="radio" value="15" name="minutos" id="minutos1">15
+	<input type="radio" value="30" name="minutos" id="minutos2">30
+	<input type="radio" value="45" name="minutos" id="minutos3">45<br>
+	<input type="file" id="foto" name="foto">
+	</h3>
+	</fieldset>
+	<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
